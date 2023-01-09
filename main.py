@@ -14,5 +14,6 @@ model = DAGMM(
 )
 
 model.fit(x)   # model training
-model.predict(y)   # sample energy
+x_energy = model.predict(x) # sample energy for training data
+y_energy = model.predict(y)   # sample energy for test data
 
